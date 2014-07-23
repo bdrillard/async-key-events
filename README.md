@@ -2,7 +2,7 @@
 
 A decidedly small project demonstrating proper usage of ClojureScript to gather in-browser keyboard events and insert them into a core.async channel.
 
-## Usage
+## Usage and Notes
 
 You may be just getting into ClojureScript and concurrency, and you'd like to understand how to gather keyboard events to do something with later. There are plenty of great examples of code out there, but this one has been deliberately drilled down to the bare minimum to show how you can gather an event, put it in a channel, and then reference it from elsewhere in your code base. To get started with this demo, run
 ```
