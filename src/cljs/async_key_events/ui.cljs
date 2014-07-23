@@ -2,11 +2,7 @@
   (:require [goog.events :as events]
             [cljs.core.async :refer [chan put!]])
   (:import [goog.events KeyHandler]
-           [goog.events.KeyHandler]
            [goog.events.EventType]))
-
-(def keyup-events
-  (.-KEYUP events/EventType))
 
 (def keydown-events
   (.-KEYDOWN events/EventType))
@@ -17,10 +13,9 @@
 (defn listen
   ([event-type] 
    (listen event-type identity))
-  ([event-type parse-event]
+  ([event-type parse-function]
    (let [ev-chan (chan)]
      (events/listen (.-body js/document)
                     event-type
-                    #(put! ev-chan (parse-event %)))
+                    #(put! ev-chan (parse-function %)))
      ev-chan)))
-   
