@@ -1,6 +1,6 @@
 # async-key-events
 
-A decidedly small project demonstrating proper usage of ClojureScript to gather in-browser keyboard events and insert them into a core.async channel.
+A decidedly small project demonstrating proper usage of [ClojureScript](http://clojure.org/clojurescript) to gather in-browser keyboard events and insert them into a [core.async](https://github.com/clojure/core.async/) channel.
 
 ## Usage and Notes
 
