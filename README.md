@@ -1,10 +1,13 @@
 # async-key-events
 
-A Clojure library designed to ... well, that part is up to you.
-
+A decidedly small project demonstrating proper usage of ClojureScript to gather in-browser keyboard events and insert them into a core.async channel.
 ## Usage
 
-FIXME
+To start, use:
+
+```
+lein ring server
+```
 
 ## License
 
